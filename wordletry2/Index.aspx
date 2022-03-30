@@ -7,6 +7,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title></title>
+
 </head>
 <body>
     <link rel="stylesheet" href="StyleSheets/StyleSheet1.css" />
@@ -24,21 +25,23 @@
                 <li class="navbar-item"><a class="navbar-links" href="#home">home</a></li>
                 <li class="navbar-item"><a class="navbar-links" href="#games">games</a></li>
                 <li class="navbar-item"><a class="navbar-links" href="Contact.aspx">contact</a></li>
-                <li class="navbar-button"><a class="button" href="/">sign up</a></li>
+                <li class="navbar-button"><button class="button" id="button" ><a href="/">sign up</a></button></li>
             </ul>
         </nav>
         <script src="Jscripts/JS1.js"></script>
 
-        <div class="main" id="home">
-            <div class="main-container">
-                <div class="main-content">
-                    <h1>welcome</h1>
-                    <h2>to my portfolio</h2>
-                    <p>By Fredrik Sjøli Trevland</p>
-                    <button class="main-button"><a href="/">about me!</a></button>
-                </div>
-                <div class="main-image-container">
-                    <img src="Media/SVG/UndrawPortfolio.svg" alt="portefolio-svg" id="main-image"/>
+        <div class="background">
+            <div class="main" id="home">
+                <div class="main-container">
+                    <div class="main-content">
+                        <h1>welcome</h1>
+                        <h2>to my portfolio</h2>
+                        <p>By Fredrik Sjøli Trevland</p>
+                        <button class="main-button"><a href="/">about me!</a></button>
+                    </div>
+                    <div class="main-image-container">
+                        <img src="Media/SVG/UndrawPortfolio.svg" alt="portefolio-svg" id="main-image"/>
+                    </div>
                 </div>
             </div>
         </div>

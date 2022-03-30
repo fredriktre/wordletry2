@@ -69,9 +69,9 @@
   <ItemGroup>
     <Content Include="Contact.aspx" />
     <Content Include="Jscripts\JS1.js" />
+    <Content Include="Media\Pictures\codebackgroundpicture.jpg" />
     <Content Include="Media\Pictures\wordle.jpg" />
     <Content Include="Media\SVG\UndrawPortfolio.svg" />
-    <Content Include="Media\SVG\UndrawWeb.svg" />
     <Content Include="StyleSheets\StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="Index.aspx" />

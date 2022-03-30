@@ -1,4 +1,8 @@
-﻿body {
+﻿html{
+    scroll-behavior: smooth;
+}
+
+body {
 }
 
 * {
@@ -11,7 +15,7 @@
 /* Nav-Styles */
 
 .navbar {
-    background: #000000;
+    background: #4F759B; /* background color */
     height: 80px;
     display: flex;
     justify-content: center;
@@ -34,13 +38,14 @@
 }
 
 #navbar-logo {
-    color: #4cff00;
+    color: #A2FAA3; /* text color */
     background-size: 100%;
     display: flex;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    font-weight: 800;
 }
 
 .fa-gem {
@@ -59,7 +64,7 @@
 }
 
 .navbar-links {
-    color: aqua; /*text-background-color*/
+    color: #A2FAA3; /*text-background-color*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,27 +81,55 @@
     width: 100%;
 }
 
-.button{
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
+    position: relative;
     padding: 10px 20px;
     height: 100%;
     border: none;
+    border-radius: 20px;
     outline: none;
-    border-radius: 4px;
-    background: #ff0000; /*button-background-color*/
-    color: blueviolet; /*button-text-color*/
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #4F759B; /* button background color */
+    transition: all 0.35s;
+    outline: none;
 }
 
-.button:hover {
-    background: blue; /*button background color*/
-    transition: all 0.3s ease;
-}
+    .button a {
+        position: relative;
+        z-index: 2;
+        border-radius: 20px;
+        color: #A2FAA3; /* color */
+        text-decoration: none;
+    }
+
+    .button:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #571F4E; /* color */
+        transition: all 0.35s;
+        border-radius: 4px;
+    }
+
+    .button:hover {
+        color: #A2FAA3; /* color */
+        border-radius: 20px;
+    }
+
+        .button:hover:after {
+            width: 100%;
+        }
 
 .navbar-links:hover {
-    color: orangered; /*text background color*/
+    color: #571F4E; /*text background color*/
     transition: all 0.3s ease;
 }
 
@@ -115,7 +148,7 @@
         padding: 0;
     }
 
-    .navbar-menu{
+    .navbar-menu {
         display: grid;
         grid-template-columns: auto;
         margin: 0;
@@ -126,7 +159,7 @@
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
-        background: #131313;
+        background: #4F759B; /* color */
     }
 
     .navbar-menu.active {
@@ -182,9 +215,10 @@
         margin: 0;
     }
 
-    .navbar-toggle .bar{
+    .navbar-toggle .bar {
         display: block;
         cursor: pointer;
+        background-color: #A2FAA3;
     }
 
     #mobile-menu.is-active .bar:nth-child(2){
@@ -202,42 +236,44 @@
 
 /* Index-Main-Styles */
 
-.main {
-    background-color: #141414;
 
+.main {
+    background-image: url(../Media/Pictures/codebackgroundpicture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.main-container{
+.main-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #141414;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    padding: 0;
+    padding: 20px;
+    background-color: #150D39;
 }
 
 .main-content h1 {
     text-transform: uppercase;
     font-size: 4rem;
-    color: white; /* color */
+    color: #A2FAA3; /* color */
 }
 
 .main-content h2 {
     text-transform: uppercase;
     font-size: 4rem;
-    color: white; /* color */
+    color: #A2FAA3; /* color */
 }
 
-.main-content p{
+.main-content p {
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
-    color: white; /* color */
+    color: #92C9B1; /* color */
 }
 
 .main-button {
